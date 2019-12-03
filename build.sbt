@@ -31,9 +31,9 @@ lazy val formattingPreferences = {
 lazy val compilationSettings = scalariformSettings ++ Seq(
   version := "0.6.0-SNAPSHOT",
   organization := "com.twosigma",
-  scalaVersion := "2.12.8",
+  scalaVersion := "2.11.12",
   assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false),
-  javacOptions ++= Seq("-source", "1.7", "-target", "1.7"),
+  javacOptions ++= Seq("-source", "1.8", "-target", "1.8"),
   compileOrder in Compile := CompileOrder.JavaThenScala,
   scalacOptions ++= Seq(
     "-deprecation",
